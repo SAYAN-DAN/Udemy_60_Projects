@@ -26,6 +26,5 @@ function getAge(birthdayValue) {
   ) {
     age--;
   }
-
   return age;
 }
