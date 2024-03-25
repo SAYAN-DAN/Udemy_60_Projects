@@ -49,13 +49,13 @@ ul {
   max-width: 800px;
   color: #000;
   margin: 0 auto;
-} 
+}
 li {
   font-size: 1.5rem;
   font-size: 2vw;
   background-color: #ffffff;
   margin: 2vw;
-  padding:0 3vw;
+  padding: 0 3vw;
   list-style: none;
   border-radius: 10px;
   display: flex;
@@ -63,5 +63,5 @@ li {
   align-items: center;
 }
 li span {
-    font-size: 3.5vw;
-} 
+  font-size: 3.5vw;
+}
