@@ -1,17 +1,24 @@
 const buttonEl = document.querySelector(".roll-button");
 const diceEl = document.querySelector(".dice");
-const rollhistoryEl = document.querySelector(".roll-history")
-let historylist = []
+const rollhistoryEl = document.querySelector(".roll-history");
+let historylist = [];
 
 function diceroll() {
   const dicenum = Math.floor(Math.random() * 6 + 1);
   const diceface = getdiceface(dicenum);
   diceEl.innerHTML = diceface;
-  historylist.push(dicenum)
-  updatehistorylist()
+  historylist.push(dicenum);
+  updatehistorylist();
 }
 function updatehistorylist() {
-  rollhistoryEl.innerHTML = ""
+  rollhistoryEl.innerHTML = "";
+  for (let i = 0; i < historylist.length; i++) {
+    const listitem = document.createElement("li");
+    listitem.innerHTML = `Roll: ${i + 1} <span> ${getdiceface(
+      historylist[i]
+    )}<span/>`;
+    rollhistoryEl.appendChild(listitem);
+  }
 }
 
 function getdiceface(dicenum) {
