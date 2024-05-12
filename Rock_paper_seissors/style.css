@@ -45,7 +45,10 @@ html,body {
     margin:15px  20px;    
     border: none;
 }
-
+#result {
+   color: red;
+   font-weight: 500;
+}
 #rock {
     background-color: red;
 }
