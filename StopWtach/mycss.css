@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 28, 28);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+}
+
+#timer {
+    font-size: 8vw;
+    margin-bottom: 2vw;
+    color: rgb(77, 8, 20);
+}
+button {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    font-size: 2vw;
+    margin-right: 3vw;
+    cursor: pointer;
+}
+#Start {
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+#stop {
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}
+#ReStart {
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+}
